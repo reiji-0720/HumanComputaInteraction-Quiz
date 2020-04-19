@@ -1,0 +1,725 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="04.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel=“stylesheet” href=“https://unpkg.com/ress/dist/ress.min.css“>
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP:500&display=swap" rel="stylesheet">
+    <title>HCIQ</title>
+  </head>
+  <body>
+    <nav class="navbar sticky-top">
+        <div id="containerheader-container">
+            <div class="ro">
+                <div id="header-text" class="col-12">
+                    <p class="title-header">>第4回  ヒューマンコンピューターインタラクション</p>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <div class="row">
+            <div class="col-md-2 col-sm-3 col-xs-12 menu-container">
+                <div class="menu">
+                    <p>MENU</p>
+                </div>
+                <div class="box task1">
+                    <a href="../01/index.html">第1回</a>
+                </div>
+                <div class="box task2">
+                    <a href="../02/index.html">第2回</a>
+                </div>
+                <div class="box task3">
+                    <a href="../03/index.html">第3回</a>
+                </div>
+                <div class="box task4">
+                    <a href="../04/index.html">第4回</a>            
+                </div>
+                <div class="box task5">
+                    <a href="../05/index.html">第5回</a>             
+                </div>
+                <div class="box task6">
+                    <a href="../06/index.html">第6回</a>
+                </div>
+                <div class="box task7">
+                    <a href="../07/index.html">第7回</a>
+                </div>
+                <div class="box task8">
+                    <a href="../08/index.html">第8回</a>
+                </div>
+                <div class="box task9">
+                    <a href="../09/index.html">第9回</a>
+                </div>
+                <div class="box task10">
+                    <a href="../10/index.html">第10回</a>
+                </div>
+            </div>
+            <div class="col-md-10 col-sm-9 col-xs-12 explanation">
+                <div class="explanation-text">
+                    <!--問題1-->
+                    <div class="con q-container01">
+                    <!--問題文1-->
+                        <div class="q-sentence01">
+                            <div class="sentence">
+                                <p>1. ( １ )では,システムを利用した際のユーザ体験である ( 2 )を高めることが重要とされる.設計に際しては, ( ３ )を知ることが求められるが,同時にユーザの ( ４ )と(  ５ ) を知ることも求められる.これらを知るために, ユーザに ( ６ )したり, ユーザを( ７ )する.設計では,( ８ )の専門家,( ９ )の専門家や( １０ )の専門家にも参加してもらう.</p>
+                            </div>
+                        </div>
+                        <!--q-answerを複製して解答欄の追加-->
+                        
+                        <div class="q-answer">
+                            <!--選択肢-->
+                            <div class="s01-choice">
+                                <p id="changeTextColor01_1" class="question-num01" onclick="answerY01_1()">a.人間中心設計</p> 
+                                <p class="question-num01" onclick="answerN01_1()">b.インタラクティブ設計</p>           
+                            </div>
+                            <!--解答-->
+                            
+                             <!--マルバツ画像表示, id="answer問題番号_数字"-->
+                             <div id="answer01_1"></div>
+                             
+                        </div>
+                        <div class="q-answer">
+                            <!--選択肢-->
+                            <div class="s01-choice">
+                                <p id="changeTextColor01_2" class="question-num01" onclick="answerY01_2()">a.ユーザーエクスペリエンス</p> 
+                                <p class="question-num01" onclick="answerN01_2()">b.ペルソナ</p>           
+                            </div>
+                            <!--解答-->
+                            
+                             <!--マルバツ画像表示, id="answer問題番号_数字"-->
+                             <div id="answer01_2"></div>
+                             
+                        </div>
+                        <div class="q-answer">
+                            <!--選択肢-->
+                            <div class="s01-choice">
+                                <p class="question-num01" onclick="answerN01_3()">a.ニーズ</p>
+                                <p id="changeTextColor01_3" class="question-num01" onclick="answerY01_3()">b.ユーザー</p> 
+                                           
+                            </div>
+                            <!--解答-->
+                            
+                             <!--マルバツ画像表示, id="answer問題番号_数字"-->
+                             <div id="answer01_3"></div>
+                             
+                        </div>
+                        <div class="q-answer">
+                            <!--選択肢-->
+                            <div class="s01-choice">
+                                <p class="question-num01" onclick="answerN01_4()">a.心理</p> 
+                                <p id="changeTextColor01_4" class="question-num01" onclick="answerY01_4()">b.業務</p> 
+                                          
+                            </div>
+                            <!--解答-->
+                            
+                             <!--マルバツ画像表示, id="answer問題番号_数字"-->
+                             <div id="answer01_4"></div>
+                             
+                        </div>
+                        <div class="q-answer">
+                            <!--選択肢-->
+                            <div class="s01-choice">
+                                <p id="changeTextColor01_5" class="question-num01" onclick="answerY01_5()">a.環境</p> 
+                                <p class="question-num01" onclick="answerN01_5()">b.心情</p>           
+                            </div>
+                            <!--解答-->
+                            
+                             <!--マルバツ画像表示, id="answer問題番号_数字"-->
+                             <div id="answer01_5"></div>
+                             
+                        </div>
+                        <div class="q-answer">
+                            <!--選択肢-->
+                            <div class="s01-choice">
+                                <p id="changeTextColor01_6" class="question-num01" onclick="answerY01_6()">a.インタービュー</p> 
+                                <p class="question-num01" onclick="answerN01_6()">b.提供</p>           
+                            </div>
+                            <!--解答-->
+                            
+                             <!--マルバツ画像表示, id="answer問題番号_数字"-->
+                             <div id="answer01_6"></div>
+                             
+                        </div>
+                        <div class="q-answer">
+                            <!--選択肢-->
+                            <div class="s01-choice">
+                                <p class="question-num01" onclick="answerN01_7()">a.認知</p> 
+                                <p id="changeTextColor01_7" class="question-num01" onclick="answerY01_7()">b.観察</p> 
+                                          
+                            </div>
+                            <!--解答-->
+                            
+                             <!--マルバツ画像表示, id="answer問題番号_数字"-->
+                             <div id="answer01_7"></div>
+                             
+                        </div>
+                        <div class="q-answer">
+                            <!--選択肢-->
+                            <div class="s01-choice">
+                                <p id="changeTextColor01_8" class="question-num01" onclick="answerY01_8()">a.エンドユーザー</p> 
+                                <p class="question-num01" onclick="answerN01_8()">b.フロントユーザー</p>           
+                            </div>
+                            <!--解答-->
+                            
+                             <!--マルバツ画像表示, id="answer問題番号_数字"-->
+                             <div id="answer01_8"></div>
+                             
+                        </div>
+                        <div class="q-answer">
+                            <!--選択肢-->
+                            <div class="s01-choice">
+                                <p id="changeTextColor01_9" class="question-num01" onclick="answerY01_9()">a.ユーザービリティ</p> 
+                                <p class="question-num01" onclick="answerN01_9()">b.エクスペリエンス</p>           
+                            </div>
+                            <!--解答-->
+                            
+                             <!--マルバツ画像表示, id="answer問題番号_数字"-->
+                             <div id="answer01_9"></div>
+                             
+                        </div>
+                        <!--最後の選択肢は”end-answer”のクラスを追加する-->
+                        <div class="end-answer q-answer">
+                            <!--選択肢-->
+                            <div class="s01-choice">
+                                <p class="question-num01" onclick="answerN01_10()">a.インフルエンス</p> 
+                                <p id="changeTextColor01_10" class="question-num01" onclick="answerY01_10()">b.アクセシビリティ</p> 
+                                          
+                            </div>
+                            <!--解答-->
+                            
+                             <!--マルバツ画像表示-->
+                             <div id="answer01_10"></div>
+                        </div>
+                    </div>
+            
+                    <div class="con q-container02">
+                        <div class="q-sentence01">
+                            <div class="sentence">
+                                <p>2. ( １ )とは,人体やその認知能力に適した機器や装置を設計する調査研究のことで,( ２ )や( ３ )とも呼ばれる.</p>
+                            </div>
+                        </div>
+                        <!--q-answerを複製して解答欄の追加-->
+                        <div class="q-answer">
+                            <!--選択肢-->
+                            <div class="s01-choice">
+                                <p id="changeTextColor02_1" class="question-num01" onclick="answerY02_1()">a.エルゴノミクス</p> 
+                                <p class="question-num01" onclick="answerN02_1()">b.アベノミクス</p>           
+                            </div>
+                            <!--解答-->
+                                    
+                            <!--マルバツ画像表示, id="answer問題番号_数字"-->
+                            <div id="answer02_1"></div>
+                                     
+                        </div>
+                                <!--最後の選択肢は”end-answer”のクラスを追加する-->
+                        <div class="q-answer">
+                                <!--選択肢-->
+                            <div class="s01-choice">
+                                <p class="question-num01" onclick="answerN02_2()">a.人知工学</p>  
+                                <p id="changeTextColor02_2" class="question-num01" onclick="answerY02_2()">b.人間工学</p>           
+                            </div>
+                            <!--解答-->
+                                    
+                            <!--マルバツ画像表示-->
+                            <div id="answer02_2"></div>
+                        </div> 
+                        <div class="end-answer q-answer">
+                                <!--選択肢-->
+                            <div class="s01-choice">
+                                <p id="changeTextColor02_3" class="question-num01" onclick="answerY02_3()">a.ヒューマンファクタ</p> 
+                                <p class="question-num01" onclick="answerN02_3()">b.ヒューマンインタラクション</p>           
+                            </div>
+                                <!--解答-->
+                                        
+                                <!--マルバツ画像表示, id="answer問題番号_数字"-->
+                            <div id="answer02_3"></div>
+                                         
+                        </div>   
+                    </div>
+                    <div class="con q-container03">
+                        <div class="q-sentence01">
+                            <div class="sentence">
+                                <p>3. ( １ )は,特定の利用状況において,特定のユーザによって,ある製品が、指定された目標を達成するために用いられる際の,有効さ, 効率,ユーザの満 足度の度合いを示す.</p>
+                            </div>
+                        </div>
+                        <!--最後の選択肢は”end-answer”のクラスを追加する-->
+                        <div class="end-answer q-answer">
+                            <!--選択肢-->
+                            <div class="s01-choice">
+                                <p id="changeTextColor03_1" class="question-num01" onclick="answerY03_1()">a.ユーザビリティ</p> 
+                                <p class="question-num01" onclick="answerN03_1()">b.アクセシビリティ</p>           
+                            </div>
+                            <!--解答-->
+                            
+                             <!--マルバツ画像表示-->
+                             <div id="answer03_1"></div>
+                        </div>
+                    </div>
+                    <div class="con q-container04">
+                        <div class="q-sentence01">
+                            <div class="sentence">
+                                <p>4. ( １ )とは、インタビューや観察などの手法を用いて,ユーザの( ２ )なニーズを( ３ )に探る調査手法である.( ４ ) はユーザの現場に出向いて調査する手法であるのに対し, ( ５ )はユーザに調査会場で普段の業務を再現して もらう調査手法である. </p>
+                            </div>
+                        </div>
+                        <!--q-answerを複製して解答欄の追加-->
+                        <div class="q-answer">
+                            <!--選択肢-->
+                            <div class="s01-choice">
+                                <p id="changeTextColor04_1" class="question-num01" onclick="answerY04_1()">a.エスノグラフィックリサーチ</p> 
+                                <p class="question-num01" onclick="answerN04_1()">b.エスニックポイント</p>           
+                            </div>
+                            <!--解答-->
+                            
+                             <!--マルバツ画像表示, id="answer問題番号_数字"-->
+                             <div id="answer04_1"></div>
+                             
+                        </div>
+                        <!--q-answerを複製して解答欄の追加-->
+                        <div class="q-answer">
+                            <!--選択肢-->
+                            <div class="s01-choice">
+                                    <p class="question-num01" onclick="answerN04_2()">a.抽象的</p>
+                                    <p id="changeTextColor04_2" class="question-num01" onclick="answerY04_2()">b.潜在的</p> 
+                                   
+                            </div>
+                            <!--解答-->
+                                
+                                 <!--マルバツ画像表示, id="answer問題番号_数字"-->
+                            <div id="answer04_2"></div>
+                                 
+                        </div>
+                        <div class="q-answer">
+                            <!--選択肢-->
+                            <div class="s01-choice">
+                                    <p id="changeTextColor04_3" class="question-num01" onclick="answerY04_3()">a.定性的</p> 
+                                    <p class="question-num01" onclick="answerN04_3()">b.個性的</p>
+                                    
+                            </div>
+                            <!--解答-->
+                                
+                                 <!--マルバツ画像表示, id="answer問題番号_数字"-->
+                            <div id="answer04_3"></div>
+                                 
+                        </div>
+                        <div class="q-answer">
+                            <!--選択肢-->
+                            <div class="s01-choice">
+                                    <p class="question-num01" onclick="answerN04_4()">a.オンロード</p>
+                                    <p id="changeTextColor04_4" class="question-num01" onclick="answerY04_4()">b.フィールドワーク</p> 
+                                   
+                            </div>
+                            <!--解答-->
+                                
+                                 <!--マルバツ画像表示, id="answer問題番号_数字"-->
+                            <div id="answer04_4"></div>
+                                 
+                        </div>
+                        <!--最後の選択肢は”end-answer”のクラスを追加する-->
+                        <div class="end-answer q-answer">
+                            <!--選択肢-->
+                            <div class="s01-choice">
+                                <p id="changeTextColor04_5" class="question-num01" onclick="answerY04_5()">a.コンテキスチュアルインクワイアリ</p> 
+                                <p class="question-num01" onclick="answerN04_5()">b.ゲイズウェアハウス</p>           
+                            </div>
+                            <!--解答-->
+                            
+                             <!--マルバツ画像表示-->
+                             <div id="answer04_5"></div>
+                        </div>
+                    </div>
+                    <div class="con q-container05">
+                        <div class="q-sentence01">
+                            <div class="sentence">
+                                <p>5. ( １ )は,どのようなユーザがどのように使うのかを想像するために設定する架空のユーザ像で,このユーザ像を満足させるように設計を行う手法が, ( ２ ) である. </p>
+                            </div>
+                        </div>
+                        <!--q-answerを複製して解答欄の追加-->
+                        <div class="q-answer">
+                            <!--選択肢-->
+                            <div class="s01-choice">
+                                <p class="question-num01" onclick="answerN05_1()">a.ペルセウス</p> 
+                                <p id="changeTextColor05_1" class="question-num01" onclick="answerY05_1()">b.ペルソナ</p>           
+                            </div>
+                            <!--解答-->
+                            
+                             <!--マルバツ画像表示, id="answer問題番号_数字"-->
+                             <div id="answer05_1"></div>
+                             
+                        </div>
+                        <!--最後の選択肢は”end-answer”のクラスを追加する-->
+                        <div class="end-answer q-answer">
+                                <!--選択肢-->
+                                <div class="s01-choice">
+                                    <p class="question-num01" onclick="answerN05_2()">a.シリアルコントラクション法</p> 
+                                    <p id="changeTextColor05_2" class="question-num01" onclick="answerY05_2()">b.ペルソナシナリオ法</p>           
+                                </div>
+                                <!--解答-->
+                                
+                                 <!--マルバツ画像表示, id="answer問題番号_数字"-->
+                                 <div id="answer05_2"></div>
+                                 
+                        </div>
+                        
+                        
+                    </div>
+                    <div class="con q-container06">
+                        <div class="q-sentence01">
+                            <div class="sentence">
+                                <p>6. ( １ ) モデルはプロセスの進行が片方向で後戻りしない線形デザイン型で, ( ２ ) モデルは、プロセスが循環する反復デザイン型のモデルである.</p>
+                            </div>
+                        </div>
+                        <div class="q-answer">
+                                <!--選択肢-->
+                                <div class="s01-choice">
+                                    <p id="changeTextColor06_1" class="question-num01" onclick="answerY06_1()">a.ウォーターフォール</p> 
+                                    <p class="question-num01" onclick="answerN06_1()">b.アジャイル</p>           
+                                </div>
+                                <!--解答-->
+                                
+                                 <!--マルバツ画像表示-->
+                                 <div id="answer06_1"></div>
+                            </div>
+                        <!--最後の選択肢は”end-answer”のクラスを追加する-->
+                        <div class="end-answer q-answer">
+                            <!--選択肢-->
+                            <div class="s01-choice">
+                                <p id="changeTextColor06_2" class="question-num01" onclick="answerY06_2()">a.スパイラル</p> 
+                                <p class="question-num01" onclick="answerN06_2()">b.マッピング</p>           
+                            </div>
+                            <!--解答-->
+                            
+                             <!--マルバツ画像表示-->
+                             <div id="answer06_2"></div>
+                        </div>
+                    </div>
+                    <div class="con q-container07">
+                        <div class="q-sentence01">
+                            <div class="sentence">
+                                <p>7. ( １ ) デザインは、数人のデザイナがそれぞれ違う視点からデザインする方法である.</p>
+                            </div>
+                        </div>
+                        <!--q-answerを複製して解答欄の追加-->
+                        <div class="end-answer q-answer">
+                            <!--選択肢-->
+                            <div class="s01-choice">
+                                <p id="changeTextColor07_1" class="question-num01" onclick="answerY07_1()">a.多角的デザイン</p> 
+                                <p class="question-num01" onclick="answerN07_1()">b.包括的デザイン</p>           
+                            </div>
+                            <!--解答-->
+                            
+                             <!--マルバツ画像表示, id="answer問題番号_数字"-->
+                             <div id="answer07_1"></div>
+                             
+                        </div>
+                    </div>
+                    <div class="con q-container08">
+                        <div class="q-sentence01">
+                            <div class="sentence">
+                                <p>8. ( １ )デザインでは、デザイン作業段階でユーザに直接参加してもらう.</p>
+                            </div>
+                        </div>
+                        
+                        <!--最後の選択肢は”end-answer”のクラスを追加する-->
+                        <div class="end-answer q-answer">
+                            <!--選択肢-->
+                            <div class="s01-choice">
+                                <p id="changeTextColor08_1" class="question-num01" onclick="answerY08_1()">a.ユーザー参加型</p> 
+                                <p class="question-num01" onclick="answerN08_1()">b.ユーザ周知型</p>           
+                            </div>
+                            <!--解答-->
+                            
+                             <!--マルバツ画像表示-->
+                             <div id="answer08_1"></div>
+                        </div>
+                    </div>
+                    <div class="con q-container09">
+                        <div class="q-sentence01">
+                            <div class="sentence">
+                                <p>9. ( １ )は,完成品ができる前にテストできるものを製作し設計の妥当性を検証する手法で,そこで製作されるものは, ( ２ )と呼ばれる.このうち,( ３ )は、全機能があるが全てが不完全なプロトタイプで,( ４ )は, 一部ではあるが完全な機能を持つプロトタイプである.( 5 )は、あるインタラクションセッションを表現するために,機能を最小限度に抑えたプロトタイプ, テストユーザが前もって計画された手順に従ってテストを行う. </p>
+                            </div>
+                        </div>
+                        <!--q-answerを複製して解答欄の追加-->
+                        <div class="q-answer">
+                                <!--選択肢-->
+                                <div class="s01-choice">
+                                    <p class="question-num01" onclick="answerN09_1()">a.アジャイル開発</p> 
+                                    <p id="changeTextColor09_1" class="question-num01" onclick="answerY09_1()">b.プロトタイピング</p> 
+                                              
+                                </div>
+                                <!--解答-->
+                                
+                                 <!--マルバツ画像表示, id="answer問題番号_数字"-->
+                                 <div id="answer09_1"></div> 
+                        </div>
+                        <div class="q-answer">
+                                <!--選択肢-->
+                                <div class="s01-choice">
+                                    <p id="changeTextColor09_2" class="question-num01" onclick="answerY09_2()">a.プロトタイプ</p> 
+                                    <p class="question-num01" onclick="answerN09_2()">b.ワイヤーフレーム</p>           
+                                </div>
+                                <!--解答-->
+                                
+                                 <!--マルバツ画像表示, id="answer問題番号_数字"-->
+                                 <div id="answer09_2"></div> 
+                        </div>
+                        <div class="q-answer">
+                                <!--選択肢-->
+                                <div class="s01-choice">
+                                    <p id="changeTextColor09_3" class="question-num01" onclick="answerY09_3()">a.水平型</p> 
+                                    <p class="question-num01" onclick="answerN09_3()">b.水面型</p>           
+                                </div>
+                                <!--解答-->
+                                
+                                 <!--マルバツ画像表示, id="answer問題番号_数字"-->
+                                 <div id="answer09_3"></div> 
+                        </div>
+                        <div class="q-answer">
+                                <!--選択肢-->
+                                <div class="s01-choice">
+                                    <p id="changeTextColor09_4" class="question-num01" onclick="answerY09_4()">a.垂直型</p> 
+                                    <p class="question-num01" onclick="answerN09_4()">b.直下型</p>           
+                                </div>
+                                <!--解答-->
+                                
+                                 <!--マルバツ画像表示, id="answer問題番号_数字"-->
+                                 <div id="answer09_4"></div> 
+                        </div>
+
+                        <div class="end-answer q-answer">
+                            <!--選択肢-->
+                            <div class="s01-choice">
+                                <p id="changeTextColor09_5" class="question-num01" onclick="answerY09_5()">a.シナリオ</p> 
+                                <p class="question-num01" onclick="answerN09_5()">b.ブラックボックス</p>           
+                            </div>
+                            <!--解答-->
+                            
+                             <!--マルバツ画像表示, id="answer問題番号_数字"-->
+                             <div id="answer09_5"></div> 
+                        </div>
+                    </div>
+                    <div class="con q-container10">
+                        <div class="q-sentence01">
+                            <div class="sentence">
+                                <p>10. 専門家による評価には,専門家が設計仕様書などを見ながらシステムを評価する( １ ) と, システムがチェック項目を満たしているかどうかを評価する( ２ )がある。前者には,経験則に基づいて評価する ( ３ ) と,人間の情報処理モデルを使いユーザになったつもりで評価する( ４ )がある.専門家による評価では, 多くの( ５ )の専門家で行う方が良い. </p>
+                            </div>
+                        </div>
+                        <!--q-answerを複製して解答欄の追加-->
+                        <div class="q-answer">
+                                <!--選択肢-->
+                                <div class="s01-choice">
+                                    <p class="question-num01" onclick="answerN10_1()">a.インスピレーション法</p> 
+                                    <p id="changeTextColor10_1" class="question-num01" onclick="answerY10_1()">b.インスペクション法</p> 
+                                              
+                                </div>
+                                <!--解答-->
+                                
+                                 <!--マルバツ画像表示, id="answer問題番号_数字"-->
+                                 <div id="answer10_1"></div>
+                                 
+                        </div>
+                        <div class="q-answer">
+                                <!--選択肢-->
+                                <div class="s01-choice">
+                                    <p id="changeTextColor10_2" class="question-num01" onclick="answerY10_2()">a.チェックリスト法</p> 
+                                    <p class="question-num01" onclick="answerN10_2()">b.インポイント法</p>           
+                                </div>
+                                <!--解答-->
+                                
+                                 <!--マルバツ画像表示, id="answer問題番号_数字"-->
+                                 <div id="answer10_2"></div>
+                                 
+                        </div>
+                        <div class="q-answer">
+                                <!--選択肢-->
+                                <div class="s01-choice">
+                                    <p class="question-num01" onclick="answerN10_3()">a.ヒューストン法</p> 
+                                    <p id="changeTextColor10_3" class="question-num01" onclick="answerY10_3()">b.ヒューリスティック法</p> 
+                                              
+                                </div>
+                                <!--解答-->
+                                
+                                 <!--マルバツ画像表示, id="answer問題番号_数字"-->
+                                 <div id="answer10_3"></div>
+                                 
+                        </div>
+                        <div class="q-answer">
+                                <!--選択肢-->
+                                <div class="s01-choice">
+                                    <p id="changeTextColor10_4" class="question-num01" onclick="answerY10_4()">a.認知的ウォークスルー</p> 
+                                    <p class="question-num01" onclick="answerN10_4()">b.ウォーキングスルー</p>           
+                                </div>
+                                <!--解答-->
+                                
+                                 <!--マルバツ画像表示, id="answer問題番号_数字"-->
+                                 <div id="answer10_4"></div>
+                                 
+                        </div>
+                        
+                        <div class="end-answer q-answer">
+                            <!--選択肢-->
+                            <div class="s01-choice">
+                                <p id="changeTextColor10_5" class="question-num01" onclick="answerY10_5()">a.分野</p> 
+                                <p class="question-num01" onclick="answerN10_5()">b.人種</p>           
+                            </div>
+                            <!--解答-->
+                            
+                             <!--マルバツ画像表示, id="answer問題番号_数字"-->
+                             <div id="answer10_5"></div>
+                             
+                        </div>
+                    </div>
+                    <div class="con q-container11">
+                        <div class="q-sentence01">
+                            <div class="sentence">
+                                <p>11. ユーザによる評価には,ユーザがインタフェースを使用しているところを見ながら行う( １ ), ユーザの操作履歴を記録し分析する( ２ ), 実験後に口 頭で聞く ( ３ ), 実験後アンケートに回答してもらう ( ４ ),実 際の使用環境で使用してもらう ( ５ ) がある. 観察法のうち,実験者が被験 者と対話しながら行う方法は, ( ６ )と呼ばれる. ユーザ評価を行う場合は,実験に先立ち,ユーザに ( ７ ) に署名してもらうのが望ましい. </p>
+                            </div>
+                        </div>
+                        <!--q-answerを複製して解答欄の追加-->
+
+                        <div class="q-answer">
+                                <!--選択肢-->
+                                <div class="s01-choice">
+                                    <p class="question-num01" onclick="answerN11_1()">a.共同レビュー</p>   
+                                    <p id="changeTextColor11_1" class="question-num01" onclick="answerY11_1()">b.観察法</p>         
+                                </div>
+                                <!--解答-->
+                                
+                                 <!--マルバツ画像表示, id="answer問題番号_数字"-->
+                                 <div id="answer11_1"></div>
+                        </div>
+
+                        <div class="q-answer">
+                                <!--選択肢-->
+                                <div class="s01-choice">
+                                    <p class="question-num01" onclick="answerN11_2()">a.キャッシュ分析法</p>   
+                                    <p id="changeTextColor11_2" class="question-num01" onclick="answerY11_2()">b.ログデータ分析法</p>         
+                                </div>
+                                <!--解答-->
+                                
+                                 <!--マルバツ画像表示, id="answer問題番号_数字"-->
+                                 <div id="answer11_2"></div>
+                        </div>
+
+                        <div class="q-answer">
+                                <!--選択肢-->
+                                <div class="s01-choice">
+                                    <p class="question-num01" onclick="answerN11_3()">a.レンジャー法</p>   
+                                    <p id="changeTextColor11_3" class="question-num01" onclick="answerY11_3()">b.インタビュー法</p>         
+                                </div>
+                                <!--解答-->
+                                
+                                 <!--マルバツ画像表示, id="answer問題番号_数字"-->
+                                 <div id="answer11_3"></div>
+                        </div>
+
+                        <div class="q-answer">
+                                <!--選択肢-->
+                                <div class="s01-choice">
+                                    <p class="question-num01" onclick="answerN11_4()">a.骨子</p>   
+                                    <p id="changeTextColor11_4" class="question-num01" onclick="answerY11_4()">b.質問紙法</p>         
+                                </div>
+                                <!--解答-->
+                                
+                                 <!--マルバツ画像表示, id="answer問題番号_数字"-->
+                                 <div id="answer11_4"></div>
+                        </div>
+
+                        <div class="q-answer">
+                                <!--選択肢-->
+                                <div class="s01-choice">
+                                    <p id="changeTextColor11_5" class="question-num01" onclick="answerY11_5()">a.モニタ調査</p>
+                                    <p class="question-num01" onclick="answerN11_5()">b.ステージング調査</p>   
+                                             
+                                </div>
+                                <!--解答-->
+                                
+                                 <!--マルバツ画像表示, id="answer問題番号_数字"-->
+                                 <div id="answer11_5"></div>
+                        </div>
+
+                        <div class="q-answer">
+                                <!--選択肢-->
+                                <div class="s01-choice">
+                                    <p class="question-num01" onclick="answerN11_6()">a.1on1</p>   
+                                    <p id="changeTextColor11_6" class="question-num01" onclick="answerY11_6()">b.コーチング</p>         
+                                </div>
+                                <!--解答-->
+                                
+                                 <!--マルバツ画像表示, id="answer問題番号_数字"-->
+                                 <div id="answer11_6"></div>
+                        </div>
+
+                        <div class="end-answer q-answer">
+                            <!--選択肢-->
+                            <div class="s01-choice">
+                                <p class="question-num01" onclick="answerN11_7()">a.合意書</p>   
+                                <p id="changeTextColor11_7" class="question-num01" onclick="answerY11_7()">b.承諾書</p>         
+                            </div>
+                            <!--解答-->
+                            
+                             <!--マルバツ画像表示, id="answer問題番号_数字"-->
+                             <div id="answer11_7"></div>
+                             
+                        </div>
+                    </div>
+                    <div class="con q-container12">
+                        <div class="q-sentence01">
+                            <div class="sentence">
+                                <p>12. ( １ )は、アンケートなどで使われるも評価尺度の一種で,提示された文に対して,「同意できる」などの回答を行う方法である.</p>
+                            </div>
+                        </div>
+                        
+                        <!--最後の選択肢は”end-answer”のクラスを追加する-->
+                        <div class="end-answer q-answer">
+                            <!--選択肢-->
+                            <div class="s01-choice">
+                                <p id="changeTextColor12_1" class="question-num01" onclick="answerY12_1()">a.リカート尺度</p> 
+                                <p class="question-num01" onclick="answerN12_1()">b.リチャード尺度</p>           
+                            </div>
+                                <!--解答-->
+                            
+                             <!--マルバツ画像表示-->
+                             <div id="answer12_1"></div>
+                        </div>
+                    </div>
+                    <div class="con q-container13">
+                        <div class="q-sentence01">
+                            <div class="sentence">
+                                <p>13. ( １ )は、早い、遅いなどの対立する形容詞対を用いて,評価対象の与える感情的なイメージを,5あるいは7段階で判定する方法である.</p>
+                            </div>
+                        </div>
+                        <!--q-answerを複製して解答欄の追加-->
+                        <div class="end-answer q-answer">
+                            <!--選択肢-->
+                            <div class="s01-choice">
+                                <p class="question-num01" onclick="answerN13_1()">a.MD法</p>
+                                <p id="changeTextColor13_1" class="question-num01" onclick="answerY13_1()">b.SD法</p>            
+                            </div>
+                                <!--解答-->
+                            
+                                <!--マルバツ画像表示, id="answer問題番号_数字"-->
+                             <div id="answer13_1"></div>
+                             
+                        </div>
+                    </div>
+                   
+                    
+                </div>
+            </div>
+        </div>     
+    </main>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="04.js"></script>
+  </body>
+</html>

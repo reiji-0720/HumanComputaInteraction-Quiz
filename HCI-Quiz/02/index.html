@@ -1,0 +1,809 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="02.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel=“stylesheet” href=“https://unpkg.com/ress/dist/ress.min.css“>
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP:500&display=swap" rel="stylesheet">
+    <title>HCIQ</title>
+  </head>
+  <body>
+    <nav class="navbar sticky-top">
+        <div id="containerheader-container">
+            <div class="ro">
+                <div id="header-text" class="col-12">
+                    <p class="title-header">>第2回  ヒューマンコンピューターインタラクション</p>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <div class="row">
+            <div class="col-md-2 col-sm-3 col-xs-12 menu-container">
+                <div class="menu">
+                    <p>MENU</p>
+                </div>
+                <div class="box task1">
+                    <a href="../01/index.html">第1回</a>
+                </div>
+                <div class="box task2">
+                    <a href="../02/index.html">第2回</a>
+                </div>
+                <div class="box task3">
+                    <a href="../03/index.html">第3回</a>
+                </div>
+                <div class="box task4">
+                    <a href="../04/index.html">第4回</a>            
+                </div>
+                <div class="box task5">
+                    <a href="../05/index.html">第5回</a>             
+                </div>
+                <div class="box task6">
+                    <a href="../06/index.html">第6回</a>
+                </div>
+                <div class="box task7">
+                    <a href="../07/index.html">第7回</a>
+                </div>
+                <div class="box task8">
+                    <a href="../08/index.html">第8回</a>
+                </div>
+                <div class="box task9">
+                    <a href="../09/index.html">第9回</a>
+                </div>
+                <div class="box task10">
+                    <a href="../10/index.html">第10回</a>
+                </div>
+            </div>
+            <div class="col-md-10 col-sm-9 col-xs-12 explanation">
+                <div class="explanation-text">
+                    <!--問題1-->
+                    <div class="con q-container01">
+                    <!--問題文1-->
+                        <div class="q-sentence01">
+                            <div class="sentence">
+                                <p>1. 情報を記憶系に取り込む働きは( 1 ), 情報が記憶系に保存される働きは( 2 ),記憶系から情報を引き出す働きを ( 3 )と呼ばれる. </p>
+                            </div>
+                        </div>
+                        <!--q-answerを複製して解答欄の追加-->
+                        
+                        <div class="q-answer">
+                            <!--選択肢-->
+                            <div class="s01-choice">
+                                <p id="changeTextColor01_1" class="question-num01" onclick="answerY01_1()">a.符号化/記銘</p> 
+                                <p class="question-num01" onclick="answerN01_1()">b.透明化/記銘</p>           
+                            </div>
+                            <!--解答-->
+                            
+                             <!--マルバツ画像表示, id="answer問題番号_数字"-->
+                             <div id="answer01_1"></div>
+                             
+                        </div>
+                        <div class="q-answer">
+                                <!--選択肢-->
+                                <div class="s01-choice">
+                                    <p id="changeTextColor01_2" class="question-num01" onclick="answerY01_2()">a.保持/貯蔵</p> 
+                                    <p class="question-num01" onclick="answerN01_2()">b.保持/貯金</p>           
+                                </div>
+                                <!--解答-->
+                                
+                                 <!--マルバツ画像表示, id="answer問題番号_数字"-->
+                                 <div id="answer01_2"></div>
+                                 
+                        </div>
+                        <!--最後の選択肢は”end-answer”のクラスを追加する-->
+                        <div class="end-answer q-answer">
+                            <!--選択肢-->
+                            <div class="s01-choice">
+                                <p class="question-num01" onclick="answerN01_3()">a.検索/絶起</p> 
+                                <p id="changeTextColor01_3" class="question-num01" onclick="answerY01_3()">b.検索/想起</p>           
+                            </div>
+                            <!--解答-->
+                            
+                             <!--マルバツ画像表示-->
+                             <div id="answer01_3"></div>
+                        </div>
+                    </div>
+            
+                    <div class="con q-container02">
+                        <div class="q-sentence01">
+                            <div class="sentence">
+                                <p>2. 外界からの刺激情報は( 1 )に入り,そこで ( 2 )を向けられた情報のみが, ( 3 )に転送され,様々な処理も行われる.最終的に( 4 )に保持納される. </p>
+                            </div>
+                        </div>
+                        <!--q-answerを複製して解答欄の追加-->
+                        <div class="q-answer">
+                            <!--選択肢-->
+                            <div class="s01-choice">
+                                <p id="changeTextColor02_1" class="question-num01" onclick="answerY02_1()">a.感覚記憶</p> 
+                                <p class="question-num01" onclick="answerN02_1()">b.絶対記憶</p>           
+                            </div>
+                            <!--解答-->
+                                    
+                            <!--マルバツ画像表示, id="answer問題番号_数字"-->
+                            <div id="answer02_1"></div>
+                                     
+                        </div>
+                                <!--最後の選択肢は”end-answer”のクラスを追加する-->
+                        <div class="q-answer">
+                                <!--選択肢-->
+                            <div class="s01-choice">
+                                <p class="question-num01" onclick="answerN02_2()">a.喚起</p>  
+                                <p id="changeTextColor02_2" class="question-num01" onclick="answerY02_2()">b.注意</p>           
+                            </div>
+                            <!--解答-->
+                                    
+                            <!--マルバツ画像表示-->
+                            <div id="answer02_2"></div>
+                        </div> 
+                        <div class="q-answer">
+                                <!--選択肢-->
+                            <div class="s01-choice">
+                                <p class="question-num01" onclick="answerN02_3()">a.長期期記憶/ワーキングメモリ</p>  
+                                <p id="changeTextColor02_3" class="question-num01" onclick="answerY02_3()">b.短期記憶/ワーキングメモリ</p>           
+                            </div>
+                            <!--解答-->
+                                    
+                            <!--マルバツ画像表示-->
+                            <div id="answer02_3"></div>
+                        </div>
+                        <div class="end-answer q-answer">
+                                <!--選択肢-->
+                            <div class="s01-choice">
+                                <p id="changeTextColor02_4" class="question-num01" onclick="answerY02_4()">a.長期記憶</p> 
+                                <p class="question-num01" onclick="answerN02_4()">b.短期記憶</p>           
+                            </div>
+                                <!--解答-->
+                                        
+                                <!--マルバツ画像表示, id="answer問題番号_数字"-->
+                            <div id="answer02_4"></div>
+                                         
+                        </div>   
+                    </div>
+                    <div class="con q-container03">
+                        <div class="q-sentence01">
+                            <div class="sentence">
+                                <p>3. 短期記憶の容量は, 小さく( 1 )と呼ばれ, ( 2 ) チャンクである.</p>
+                            </div>
+                        </div>
+                        <!--最後の選択肢は”end-answer”のクラスを追加する-->
+                        <div class="q-answer">
+                            <!--選択肢-->
+                            <div class="s01-choice">
+                                <p id="changeTextColor03_1" class="question-num01" onclick="answerY03_1()">a.マジカルナンバー</p> 
+                                <p class="question-num01" onclick="answerN03_1()">b.バックナンバー</p>           
+                            </div>
+                            <!--解答-->
+                            
+                             <!--マルバツ画像表示-->
+                             <div id="answer03_1"></div>
+                        </div>
+                        <div class="end-answer q-answer">
+                                <!--選択肢-->
+                                <div class="s01-choice">
+                                    <p id="changeTextColor03_2" class="question-num01" onclick="answerY03_2()">a.7±2</p> 
+                                    <p class="question-num01" onclick="answerN03_2()">b.6±2</p>           
+                                </div>
+                                <!--解答-->
+                                
+                                 <!--マルバツ画像表示-->
+                                 <div id="answer03_2"></div>
+                        </div>
+                    </div>
+                    <div class="con q-container04">
+                        <div class="q-sentence01">
+                            <div class="sentence">
+                                <p>4. 長期記憶には,事実と知識,経験を保持する( 1 )と,技能や手順、ノウハウなどを保持する( 2 )がある.</p>
+                            </div>
+                        </div>
+                        <!--q-answerを複製して解答欄の追加-->
+                        <div class="q-answer">
+                            <!--選択肢-->
+                            <div class="s01-choice">
+                                <p id="changeTextColor04_1" class="question-num01" onclick="answerY04_1()">a.宣言的記憶</p> 
+                                <p class="question-num01" onclick="answerN04_1()">b.宣言的能力</p>           
+                            </div>
+                            <!--解答-->
+                            
+                             <!--マルバツ画像表示, id="answer問題番号_数字"-->
+                             <div id="answer04_1"></div>
+                             
+                        </div>
+                        <!--q-answerを複製して解答欄の追加-->
+                        <div class="end-answer q-answer">
+                            <!--選択肢-->
+                            <div class="s01-choice">
+                                    <p class="question-num01" onclick="answerN04_2()">a.手続き能力</p>
+                                    <p id="changeTextColor04_2" class="question-num01" onclick="answerY04_2()">b.手続き記憶</p> 
+                                   
+                            </div>
+                            <!--解答-->
+                                
+                                 <!--マルバツ画像表示, id="answer問題番号_数字"-->
+                            <div id="answer04_2"></div>
+                                 
+                        </div>
+                    </div>
+                    <div class="con q-container05">
+                        <div class="q-sentence01">
+                            <div class="sentence">
+                                <p>5. 先行刺激が後の認知に影響を及ぼす効果は, ( 1 )と呼ばれる.</p>
+                            </div>
+                        </div>
+                        <!--最後の選択肢は”end-answer”のクラスを追加する-->
+                        <div class="end-answer q-answer">
+                            <!--選択肢-->
+                            <div class="s01-choice">
+                                <p id="changeTextColor05_1" class="question-num01" onclick="answerY05_1()">a.プライミング効果</p> 
+                                <p class="question-num01" onclick="answerN05_1()">b.プログラミング効果</p>           
+                            </div>
+                            <!--解答-->
+                            
+                             <!--マルバツ画像表示-->
+                             <div id="answer05_1"></div>
+                        </div>
+                    </div>
+                    <div class="con q-container06">
+                        <div class="q-sentence01">
+                            <div class="sentence">
+                                <p>6. 認知が周辺状況に影響を受ける現象は, ( 1 )と呼ばれる.</p>
+                            </div>
+                        </div>
+                        <!--最後の選択肢は”end-answer”のクラスを追加する-->
+                        <div class="end-answer q-answer">
+                            <!--選択肢-->
+                            <div class="s01-choice">
+                                <p class="question-num01" onclick="answerN06_1()">a.人脈効果</p> 
+                                <p id="changeTextColor06_1" class="question-num01" onclick="answerY06_1()">b.文脈効果</p>           
+                            </div>
+                            <!--解答-->
+                            
+                             <!--マルバツ画像表示-->
+                             <div id="answer06_1"></div>
+                        </div>
+                    </div>
+                    <div class="con q-container07">
+                        <div class="q-sentence01">
+                            <div class="sentence">
+                                <p>7. ( １ )とは,符号化がなされた文脈とともに記憶されるというものである.</p>
+                            </div>
+                        </div>
+                        <!--q-answerを複製して解答欄の追加-->
+                        <div class="end-answer q-answer">
+                            <!--選択肢-->
+                            <div class="s01-choice">
+                                <p id="changeTextColor07_1" class="question-num01" onclick="answerY07_1()">a.符号化特定性原理</p> 
+                                <p class="question-num01" onclick="answerN07_1()">b.符号化不特定性原理</p>           
+                            </div>
+                            <!--解答-->
+                            
+                             <!--マルバツ画像表示, id="answer問題番号_数字"-->
+                             <div id="answer07_1"></div>
+                             
+                        </div>
+                    </div>
+                    <div class="con q-container08">
+                        <div class="q-sentence01">
+                            <div class="sentence">
+                                <p>8. 特定の気分と感情的に一致する刺激材料が選択的に処理されることは、( 1 )と呼ばれる.</p>
+                            </div>
+                        </div>
+                        <!--最後の選択肢は”end-answer”のクラスを追加する-->
+                        <div class="end-answer q-answer">
+                            <!--選択肢-->
+                            <div class="s01-choice">
+                                <p id="changeTextColor08_1" class="question-num01" onclick="answerY08_1()">a.気分一致処理</p> 
+                                <p class="question-num01" onclick="answerN08_1()">b.心一致処理</p>           
+                            </div>
+                            <!--解答-->
+                            
+                             <!--マルバツ画像表示-->
+                             <div id="answer08_1"></div>
+                        </div>
+                    </div>
+                    <div class="con q-container09">
+                        <div class="q-sentence01">
+                            <div class="sentence">
+                                <p>9. 二重符号化理論とは、外部刺激が, ( 1 )と( 2 )の両方で二重化して記憶されるとする考え方である.</p>
+                            </div>
+                        </div>
+                        <!--q-answerを複製して解答欄の追加-->
+                        <div class="q-answer">
+                            <!--選択肢-->
+                            <div class="s01-choice">
+                                <p id="changeTextColor09_1" class="question-num01" onclick="answerY09_1()">a.言語システム</p> 
+                                <p class="question-num01" onclick="answerN09_1()">b.C言語</p>           
+                            </div>
+                            <!--解答-->
+                            
+                             <!--マルバツ画像表示, id="answer問題番号_数字"-->
+                             <div id="answer09_1"></div> 
+                        </div>
+                        <!--q-answerを複製して解答欄の追加-->
+                        <div class="end-answer q-answer">
+                                <!--選択肢-->
+                                <div class="s01-choice">
+                                    <p id="changeTextColor09_2" class="question-num01" onclick="answerY09_2()">a.非言語/イメージシステム</p>
+                                    <p class="question-num01" onclick="answerN09_2()">b.言語/ジェスシステム</p>           
+                                </div>
+                                <!--解答-->
+                                
+                                 <!--マルバツ画像表示, id="answer問題番号_数字"-->
+                                 <div id="answer09_2"></div> 
+                        </div>
+                    </div>
+                    <div class="con q-container10">
+                        <div class="q-sentence01">
+                            <div class="sentence">
+                                <p>10. 忘却には、記憶が時間の経過とともに薄れ消失し思い出せなくなるとする ( 1 )と,新たな記憶の関連付けで古い記憶の関連付けと干渉を起こし, 古い記憶が再生されにくくなる( 2 )がある.</p>
+                            </div>
+                        </div>
+                        <!--q-answerを複製して解答欄の追加-->
+                        <div class="q-answer">
+                            <!--選択肢-->
+                            <div class="s01-choice">
+                                <p id="changeTextColor10_1" class="question-num01" onclick="answerY10_1()">a.減衰論</p> 
+                                <p class="question-num01" onclick="answerN10_1()">b.増大論</p>           
+                            </div>
+                            <!--解答-->
+                            
+                             <!--マルバツ画像表示, id="answer問題番号_数字"-->
+                             <div id="answer10_1"></div>
+                             
+                        </div>
+                        <div class="end-answer q-answer">
+                                <!--選択肢-->
+                                <div class="s01-choice">
+                                    <p class="question-num01" onclick="answerN10_2()">a.惨状論</p> 
+                                    <p id="changeTextColor10_2" class="question-num01" onclick="answerY10_2()">b.干渉論</p>           
+                                </div>
+                                <!--解答-->
+                                
+                                 <!--マルバツ画像表示, id="answer問題番号_数字"-->
+                                 <div id="answer10_2"></div>
+                                 
+                        </div>
+                    </div>
+                    <div class="con q-container11">
+                        <div class="q-sentence01">
+                            <div class="sentence">
+                                <p>11. 受け手の期待に沿った情報が選択的に認知され沿わない情報を無視してしまう現象は、( 1 )と呼ばれる.</p>
+                            </div>
+                        </div>
+                        <!--q-answerを複製して解答欄の追加-->
+                        <div class="end-answer q-answer">
+                            <!--選択肢-->
+                            <div class="s01-choice">
+                                <p class="question-num01" onclick="answerN11_1()">a.認知バイブル</p>   
+                                <p id="changeTextColor11_1" class="question-num01" onclick="answerY11_1()">b.認知バイアス</p>         
+                            </div>
+                            <!--解答-->
+                            
+                             <!--マルバツ画像表示, id="answer問題番号_数字"-->
+                             <div id="answer11_1"></div>
+                             
+                        </div>
+                    </div>
+                    <div class="con q-container12">
+                        <div class="q-sentence01">
+                            <div class="sentence">
+                                <p>12. 脳では,注意を向けた情報のみが処理される . (１)と呼ばれる.(２)では,入力に物理的処理を施し不要な情報を除外し,必 要な情報だけを選択的に意味的処理に送る. (３)では,物理的処理により,完全に情報を除外するのではなく,ほとんどの情報が弱くなりながらも意味的処理 に送られる. (４)では,入力情報の意味的分析が終了した後,注意による情報の選択が行われると考える.</p>
+                            </div>
+                        </div>
+                        <!--q-answerを複製して解答欄の追加-->
+                        <div class="q-answer">
+                            <!--選択肢-->
+                            <div class="s01-choice">
+                                <p id="changeTextColor12_1" class="question-num01" onclick="answerY12_1()">a.選択的注意</p> 
+                                <p class="question-num01" onclick="answerN12_1()">b.注意喚起</p>           
+                            </div>
+                            <!--解答-->
+                            
+                             <!--マルバツ画像表示, id="answer問題番号_数字"-->
+                             <div id="answer12_1"></div>
+                             
+                        </div>
+                        <!--最後の選択肢は”end-answer”のクラスを追加する-->
+                        <div class="q-answer">
+                            <!--選択肢-->
+                            <div class="s01-choice">
+                                <p class="question-num01" onclick="answerN12_2()">a.後期選択フィルタリングモデル</p>    
+                                <p id="changeTextColor12_2" class="question-num01" onclick="answerY12_2()">b.早期選択フィルタリングモデル</p> 
+       
+                            </div>
+                            <!--解答-->
+                            
+                             <!--マルバツ画像表示-->
+                             <div id="answer12_2"></div>
+                        </div>
+                        <div class="q-answer">
+                                <!--選択肢-->
+                            <div class="s01-choice">
+                                <p class="question-num01" onclick="answerN12_3()">a.減衰モデル</p>    
+                                <p id="changeTextColor12_3" class="question-num01" onclick="answerY12_3()">b.注意減衰モデル</p> 
+       
+                            </div>
+                                <!--解答-->
+                                
+                                 <!--マルバツ画像表示-->
+                             <div id="answer12_3"></div>
+                        </div>
+                        <div class="end-answer q-answer">
+                                <!--選択肢-->
+                                <div class="s01-choice">
+                                <p class="question-num01" onclick="answerN12_4()">a.前期選択モデル</p>        
+                                <p id="changeTextColor12_4" class="question-num01" onclick="answerY12_4()">b.後期選択モデル</p> 
+   
+                            </div>
+                                <!--解答-->
+                                
+                                 <!--マルバツ画像表示-->
+                             <div id="answer12_4"></div>
+                        </div>
+                    </div>
+                    <div class="con q-container13">
+                        <div class="q-sentence01">
+                            <div class="sentence">
+                                <p>13. 複数音源中から注目音のみを聞き取ることができる現象は(１) 効果と呼ばれる.</p>
+                            </div>
+                        </div>
+                        <!--q-answerを複製して解答欄の追加-->
+                        <div class="end-answer q-answer">
+                            <!--選択肢-->
+                            <div class="s01-choice">
+                                <p class="question-num01" onclick="answerN13_1()">a.カクテルプリティ</p>
+                                <p id="changeTextColor13_1" class="question-num01" onclick="answerY13_1()">b.カクテルパーティ</p>            
+                            </div>
+                            <!--解答-->
+                            
+                             <!--マルバツ画像表示, id="answer問題番号_数字"-->
+                             <div id="answer13_1"></div>
+                             
+                        </div>
+                    </div>
+                    <div class="con q-container14">
+                        <div class="q-sentence01">
+                            <div class="sentence">
+                                <p>14. (１)は両耳に異なる情報を入力したとき,注意を向けられていない方の情報に対して、(２) 情報処理はできても, (３)情報処理はできない現象のことである.</p>
+                            </div>
+                        </div>
+                        <!--q-answerを複製して解答欄の追加-->
+                        <div class="q-answer">
+                            <!--選択肢-->
+                            <div class="s01-choice">
+                                <p id="changeTextColor14_1" class="question-num01" onclick="answerY14_1()">a.両耳分難聴</p> 
+                                <p class="question-num01" onclick="answerN14_1()">b.片耳分難聴</p>           
+                            </div>
+                            <!--解答-->
+                            
+                             <!--マルバツ画像表示, id="answer問題番号_数字"-->
+                             <div id="answer14_1"></div>
+                             
+                        </div>
+                        <div class="q-answer">
+                            <!--選択肢-->
+                            <div class="s01-choice">
+                                <p class="question-num01" onclick="answerN14_2()">a.抽象的</p>    
+                                <p id="changeTextColor14_2" class="question-num01" onclick="answerY14_2()">b.物理的</p> 
+       
+                            </div>
+                            <!--解答-->
+                            
+                             <!--マルバツ画像表示, id="answer問題番号_数字"-->
+                             <div id="answer14_2"></div>
+                             
+                        </div>
+                        <div class="end-answer q-answer">
+                            <!--選択肢-->
+                            <div class="s01-choice">
+                                <p class="question-num01" onclick="answerN14_3()">a.倫理的</p>  
+                                <p id="changeTextColor14_3" class="question-num01" onclick="answerY14_3()">b.意味的</p> 
+         
+                            </div>
+                            <!--解答-->
+                            
+                             <!--マルバツ画像表示, id="answer問題番号_数字"-->
+                             <div id="answer14_3"></div>
+                             
+                        </div>
+                    </div>
+                    <div class="con q-container15">
+                        <div class="q-sentence01">
+                            <div class="sentence">
+                                <p>15. (１)探索は視線移動することなく自動的に注意が誘導される(２)が発生する(３) 過程である. (４) 探索なので、無視すべき刺激の数が増え ても、反応時間はほとんど変わらない. (５) 探索は,視線移動しながら確認しなければならないので, (６)) 過程である. (７) 探索なので,無視すべき刺激の数に(８)して反応時間が長くなる.</p>
+                            </div>
+                        </div>
+                        <!--q-answerを複製して解答欄の追加-->
+                        <div class="q-answer">
+                            <!--選択肢-->
+                            <div class="s01-choice">
+                                <p id="changeTextColor15_1" class="question-num01" onclick="answerY15_1()">a.単一特徴</p> 
+                                <p class="question-num01" onclick="answerN15_1()">b.逐次</p>           
+                            </div>
+                            <!--解答-->
+                            
+                             <!--マルバツ画像表示, id="answer問題番号_数字"-->
+                             <div id="answer15_1"></div>
+                             
+                        </div>
+                         <!--q-answerを複製して解答欄の追加-->
+                         <div class="q-answer">
+                            <!--選択肢-->
+                            <div class="s01-choice">
+                                <p class="question-num01" onclick="answerN15_2()">a.プッシング</p> 
+                                <p id="changeTextColor15_2" class="question-num01" onclick="answerY15_2()">b.ポップアウト</p> 
+          
+                            </div>
+                            <!--解答-->
+                            
+                             <!--マルバツ画像表示, id="answer問題番号_数字"-->
+                             <div id="answer15_2"></div>
+                             
+                        </div>
+                         <!--q-answerを複製して解答欄の追加-->
+                         <div class="q-answer">
+                            <!--選択肢-->
+                            <div class="s01-choice">
+                                <p class="question-num01" onclick="answerN15_3()">a.事前探査</p> 
+                                <p id="changeTextColor15_3" class="question-num01" onclick="answerY15_3()">b.前注意</p> 
+          
+                            </div>
+                            <!--解答-->
+                            
+                             <!--マルバツ画像表示, id="answer問題番号_数字"-->
+                             <div id="answer15_3"></div>
+                             
+                        </div>
+                        <!--最後の選択肢は”end-answer”のクラスを追加する-->
+                        <div class="q-answer">
+                            <!--選択肢-->
+                            <div class="s01-choice">
+                                <p class="question-num01" onclick="answerN15_4()">a.直列</p>       
+                                <p id="changeTextColor15_4" class="question-num01" onclick="answerY15_4()">b.並列</p> 
+    
+                            </div>
+                            <!--解答-->
+                            
+                             <!--マルバツ画像表示-->
+                             <div id="answer15_4"></div>
+                        </div>
+                        <div class="q-answer">
+                                <!--選択肢-->
+                            <div class="s01-choice">
+                                <p id="changeTextColor15_5" class="question-num01" onclick="answerY15_5()">a.結合</p> 
+                                <p class="question-num01" onclick="answerN15_5()">b.融合</p>           
+                            </div>
+                                <!--解答-->
+                                
+                                 <!--マルバツ画像表示-->
+                             <div id="answer15_5"></div>
+                        </div>
+                        <div class="q-answer">
+                                    <!--選択肢-->
+                            <div class="s01-choice">
+                                <p id="changeTextColor15_6" class="question-num01" onclick="answerY15_6()">a.注意</p> 
+                                <p class="question-num01" onclick="answerN15_6()">b.確認</p>           
+                            </div>
+                                    <!--解答-->
+                                    
+                                     <!--マルバツ画像表示-->
+                             <div id="answer15_6"></div>
+                        </div>
+                        <div class="q-answer">
+                                        <!--選択肢-->
+                            <div class="s01-choice">
+                                <p id="changeTextColor15_7" class="question-num01" onclick="answerY15_7()">a.逐次</p> 
+                                <p class="question-num01" onclick="answerN15_7()">b.順次</p>           
+                            </div>
+                                        <!--解答-->
+                                        
+                                         <!--マルバツ画像表示-->
+                             <div id="answer15_7"></div>
+                        </div>
+                        <div class="end-answer q-answer">
+                                            <!--選択肢-->
+                            <div class="s01-choice">
+                                <p id="changeTextColor15_8" class="question-num01" onclick="answerY15_8()">a.比例</p> 
+                                <p class="question-num01" onclick="answerN15_8()">b.反比例</p>           
+                            </div>
+                                            <!--解答-->
+                                            
+                                             <!--マルバツ画像表示-->
+                            <div id="answer15_8"></div>
+                        </div>
+                    </div>
+                    <div class="con q-container16">
+                        <div class="q-sentence01">
+                            <div class="sentence">
+                                <p>16. (１)とは,視覚課題が与えられているときに,それとは異なる刺激には気が付かない現象で,(２)とは,緩やかな変化には気が付かない現象である.</p>
+                            </div>
+                        </div>
+                        <!--q-answerを複製して解答欄の追加-->
+                        <div class="q-answer">
+                            <!--選択肢-->
+                            <div class="s01-choice">
+                                <p class="question-num01" onclick="answerN16_1()">a.注意盲</p>           
+                                <p id="changeTextColor16_1" class="question-num01" onclick="answerY16_1()">ｂ.不注意盲</p> 
+                            </div>
+                            <!--解答-->
+                            
+                             <!--マルバツ画像表示, id="answer問題番号_数字"-->
+                             <div id="answer16_1"></div>
+                             
+                        </div>
+                        <!--q-answerを複製して解答欄の追加-->
+                        <div class="end-answer q-answer">
+                            <!--選択肢-->
+                            <div class="s01-choice">
+                                <p class="question-num01" onclick="answerN16_2()">a.固定盲</p>           
+                                <p id="changeTextColor16_2" class="question-num01" onclick="answerY16_2()">ｂ.変化盲</p> 
+                            </div>
+                            <!--解答-->
+                            
+                             <!--マルバツ画像表示, id="answer問題番号_数字"-->
+                             <div id="answer16_2"></div>
+                             
+                        </div>
+                    </div>
+                    <div class="con q-container17">
+                        <div class="q-sentence01">
+                            <div class="sentence">
+                                <p>17. 人の情報処理過程には、注意を必要とする意識的な処理の(１)と,無意識の処理の (２)がある. </p>
+                            </div>
+                        </div>
+                        <!--q-answerを複製して解答欄の追加-->
+                        <div class="q-answer">
+                            <!--選択肢-->
+                            <div class="s01-choice">
+                                <p id="changeTextColor17_1" class="question-num01" onclick="answerY17_1()">a.制御処理</p> 
+                                <p class="question-num01" onclick="answerN17_1()">b.解放処理</p>           
+                            </div>
+                            <!--解答-->
+                            
+                             <!--マルバツ画像表示, id="answer問題番号_数字"-->
+                             <div id="answer17_1"></div>
+                             
+                        </div>
+                        <!--q-answerを複製して解答欄の追加-->
+                        <div class="end-answer q-answer">
+                            <!--選択肢-->
+                            <div class="s01-choice">
+                                <p id="changeTextColor17_2" class="question-num01" onclick="answerY17_2()">a.自動処理</p> 
+                                <p class="question-num01" onclick="answerN17_2()">b.手動処理</p>           
+                            </div>
+                            <!--解答-->
+                            
+                             <!--マルバツ画像表示, id="answer問題番号_数字"-->
+                             <div id="answer17_2"></div>
+                             
+                        </div>
+                    </div>
+                    <div class="con q-container18">
+                        <div class="q-sentence01">
+                            <div class="sentence">
+                                <p>18. エラーには、やろうとしたことが最初から間違っている(１)と,やろうと 「思ったことは正しかったのに途中で失敗する(２)がある. 
+
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <!--最後の選択肢は”end-answer”のクラスを追加する-->
+                        <div class="q-answer">
+                            <!--選択肢-->
+                            <div class="s01-choice">
+                                <p id="changeTextColor18_1" class="question-num01" onclick="answerY18_1()">a.ミステーク</p> 
+                                <p class="question-num01" onclick="answerN18_1()">b.サクセス</p>           
+                            </div>
+                            <!--解答-->
+                            <!--マルバツ画像表示, id="answer問題番号_数字"-->
+                             <!--マルバツ画像表示-->
+                             <div id="answer18_1"></div>
+                        </div>
+                           <!--最後の選択肢は”end-answer”のクラスを追加する-->
+                           <div class="end-answer q-answer">
+                                <!--選択肢-->
+                                <div class="s01-choice">
+                                    <p class="question-num01" onclick="answerN18_2()">a.ロール</p>     
+                                    <p id="changeTextColor18_2" class="question-num01" onclick="answerY18_2()">b.スリップ</p> 
+      
+                                </div>
+                                <!--解答-->
+                                <!--マルバツ画像表示, id="answer問題番号_数字"-->
+                                 <!--マルバツ画像表示-->
+                                 <div id="answer18_2"></div>
+                            </div>
+                    </div>
+                    <div class="con q-container19">
+                        <div class="q-sentence01">
+                            <div class="sentence">
+                                <p>19. (１)とは,持続的注意能力のことである.</p>
+                            </div>
+                        </div>
+                            <!--q-answerを複製して解答欄の追加-->
+                        <div class="end-answer q-answer">
+                                <!--選択肢-->
+                            <div class="s01-choice">
+                                <p class="question-num01" onclick="answerN19_1()">a.ステアリング</p>    
+                                <p id="changeTextColor19_1" class="question-num01" onclick="answerY19_1()">b.ビジランス</p> 
+       
+                            </div>
+                                <!--解答-->
+                                
+                                 <!--マルバツ画像表示, id="answer問題番号_数字"-->
+                             <div id="answer19_1"></div>
+                                 
+                        </div>
+                            <!--q-answerを複製して解答欄の追加-->
+                        
+                    </div>
+                    <div class="con q-container20">
+                        <div class="q-sentence01">
+                            <div class="sentence">
+                                <p>20. (１)とは,感覚刺激が,注意を誘引する特性のことで,これを図示したのが,(２)である.</p>
+                            </div>
+                        </div>
+                            <!--q-answerを複製して解答欄の追加-->
+                        <div class="q-answer">
+                            <!--選択肢-->
+                            <div class="s01-choice">
+                                
+                                <p class="question-num01" onclick="answerN20_1()">a.サリバン</p>    
+                                <p id="changeTextColor20_1" class="question-num01" onclick="answerY20_1()">b.サリエンシー</p>        
+                            </div>
+                                    <!--解答-->
+                                    
+                                     <!--マルバツ画像表示, id="answer問題番号_数字"-->
+                             <div id="answer20_1"></div>
+                                     
+                        </div>
+                                <!--q-answerを複製して解答欄の追加-->
+                        <div class="end-answer q-answer">
+                                    <!--選択肢-->
+                            <div class="s01-choice">
+                                <p id="changeTextColor20_2" class="question-num01" onclick="answerY20_2()">a.サリエンシーマップ</p> 
+                                <p class="question-num01" onclick="answerN20_2()">b.サリバンマップ</p>           
+                            </div>
+                                    <!--解答-->
+                                    
+                                     <!--マルバツ画像表示, id="answer問題番号_数字"-->
+                            <div id="answer20_2"></div>
+                                     
+                        </div>
+                    </div>
+                    <div class="con q-container21">
+                        <div class="q-sentence01">
+                            <div class="sentence">
+                                <p>21. (１)知覚とは,複数の知覚の相互作用に基づく知覚のことである.</p>
+                            </div>
+                        </div>
+                                    <!--q-answerを複製して解答欄の追加-->
+                        <div class="end-answer q-answer">
+                                        <!--選択肢-->
+                            <div class="s01-choice">
+                                <p id="changeTextColor21_1" class="question-num01" onclick="answerY21_1()">a.クロスモーダル</p> 
+                                <p class="question-num01" onclick="answerN21_1()">b.リアルモーダル</p>           
+                            </div>
+                                        <!--解答-->
+                                        
+                                         <!--マルバツ画像表示, id="answer問題番号_数字"-->
+                             <div id="answer21_1"></div>                 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>     
+    </main>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="02.js"></script>
+  </body>
+</html>

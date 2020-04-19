@@ -1,0 +1,826 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="05.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel=“stylesheet” href=“https://unpkg.com/ress/dist/ress.min.css“>
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP:500&display=swap" rel="stylesheet">
+    <title>HCIQ</title>
+  </head>
+  <body>
+    <nav class="navbar sticky-top">
+        <div id="containerheader-container">
+            <div class="ro">
+                <div id="header-text" class="col-12">
+                    <p class="title-header">>第5回  ヒューマンコンピューターインタラクション</p>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <div class="row">
+            <div class="col-md-2 col-sm-3 col-xs-12 menu-container">
+                <div class="menu">
+                    <p>MENU</p>
+                </div>
+                <div class="box task1">
+                    <a href="../01/index.html">第1回</a>
+                </div>
+                <div class="box task2">
+                    <a href="../02/index.html">第2回</a>
+                </div>
+                <div class="box task3">
+                    <a href="../03/index.html">第3回</a>
+                </div>
+                <div class="box task4">
+                    <a href="../04/index.html">第4回</a>            
+                </div>
+                <div class="box task5">
+                    <a href="../05/index.html">第5回</a>             
+                </div>
+                <div class="box task6">
+                    <a href="../06/index.html">第6回</a>
+                </div>
+                <div class="box task7">
+                    <a href="../07/index.html">第7回</a>
+                </div>
+                <div class="box task8">
+                    <a href="../08/index.html">第8回</a>
+                </div>
+                <div class="box task9">
+                    <a href="../09/index.html">第9回</a>
+                </div>
+                <div class="box task10">
+                    <a href="../10/index.html">第10回</a>
+                </div>
+            </div>
+            <div class="col-md-10 col-sm-9 col-xs-12 explanation">
+                <div class="explanation-text">
+                    <!--問題1-->
+                    <div class="con q-container01">
+                    <!--問題文1-->
+                        <div class="q-sentence01">
+                            <div class="sentence">
+                                <p>1. ( 1 )は、元々,連打されるキーの印字ハンマ同士が絡まらないように離して設計されたキーボード配列である.一方, ( 2 )は、左手右手をリズミカルに打鍵できるため、効率的に入力できるキーボード配列である. </p>
+                            </div>
+                        </div>
+                        <!--q-answerを複製して解答欄の追加-->
+                        
+                        <div class="q-answer">
+                            <!--選択肢-->
+                            <div class="s01-choice">
+                                <p id="changeTextColor01_1" class="question-num01" onclick="answerY01_1()">a.QWERTY</p> 
+                                <p class="question-num01" onclick="answerN01_1()">b.クオリア</p>           
+                            </div>
+                            <!--解答-->
+                            
+                             <!--マルバツ画像表示, id="answer問題番号_数字"-->
+                             <div id="answer01_1"></div>
+                             
+                        </div>
+                        <!--最後の選択肢は”end-answer”のクラスを追加する-->
+                        <div class="end-answer q-answer">
+                            <!--選択肢-->
+                            <div class="s01-choice">
+                                <p id="changeTextColor01_2" class="question-num01" onclick="answerY01_2()">a.DVORAK</p> 
+                                <p class="question-num01" onclick="answerN01_2()">b.DIVING</p>           
+                            </div>
+                            <!--解答-->
+                            
+                             <!--マルバツ画像表示-->
+                             <div id="answer01_2"></div>
+                        </div>
+                    </div>
+            
+                    <div class="con q-container02">
+                        <div class="q-sentence01">
+                            <div class="sentence">
+                                <p>2. キーボードを見ずに両手の全指を使い打鍵する技術は,( 1 )と呼ばれる.各キーに数個ずつ文字を割り当て、ユーザがキーを連打した回数によって異なる文字が入力される方式は, ( 2 )と呼ばれる.</p>
+                            </div>
+                        </div>
+                        <!--q-answerを複製して解答欄の追加-->
+                        <div class="q-answer">
+                            <!--選択肢-->
+                            <div class="s01-choice">
+                                <p id="changeTextColor02_1" class="question-num01" onclick="answerY02_1()">a.タッチタイピング</p> 
+                                <p class="question-num01" onclick="answerN02_1()">b.クイックタイピング</p>           
+                            </div>
+                            <!--解答-->
+                                    
+                            <!--マルバツ画像表示, id="answer問題番号_数字"-->
+                            <div id="answer02_1"></div>
+                                     
+                        </div>
+                        <div class="end-answer q-answer">
+                                <!--選択肢-->
+                            <div class="s01-choice">
+                                <p class="question-num01" onclick="answerN02_2()">a.タイピング</p>
+                                <p id="changeTextColor02_2" class="question-num01" onclick="answerY02_2()">b.マルチタップ</p>            
+                            </div>
+                                <!--解答-->
+                                        
+                                <!--マルバツ画像表示, id="answer問題番号_数字"-->
+                            <div id="answer02_2"></div>
+                                         
+                        </div>   
+                    </div>
+                    <div class="con q-container03">
+                        <div class="q-sentence01">
+                            <div class="sentence">
+                                <p>3. マウスは( 1 ) な位置情報をペンタブレットは( 2 ) な位置情報を入力する。ノートPCなどでマウスの代わりに使われる( 3 )は,( 4 ) な位置情報を入力する. キーボードの G, H, B に囲まれた所に配置された ( 5 )は,( 6 )な位置情報を入力する. ( 7 )は,ボールを手で触れて回転方向や速度を入力する.( 8 )は,傾斜方向や傾斜角を入力する.</p>
+                            </div>
+                        </div>
+                                    <!--q-answerを複製して解答欄の追加-->
+                        
+                                    <div class="q-answer">
+                                            <!--選択肢-->
+                                            <div class="s01-choice">
+                                                <p id="changeTextColor03_1" class="question-num01" onclick="answerY03_1()">a.相対的</p> 
+                                                <p class="question-num01" onclick="answerN03_1()">b.敵対的</p>           
+                                            </div>
+                                            <!--解答-->
+                                            
+                                             <!--マルバツ画像表示, id="answer問題番号_数字"-->
+                                             <div id="answer03_1"></div>
+                                             
+                                        </div>
+                                        <div class="q-answer">
+                                            <!--選択肢-->
+                                            <div class="s01-choice">
+                                                <p class="question-num01" onclick="answerN03_2()">a.相対的</p>    
+                                                <p id="changeTextColor03_2" class="question-num01" onclick="answerY03_2()">b.絶対的</p>           
+                                            </div>
+                                            <!--解答-->
+                                            
+                                             <!--マルバツ画像表示, id="answer問題番号_数字"-->
+                                             <div id="answer03_2"></div>
+                                             
+                                        </div>
+                                        <div class="q-answer">
+                                            <!--選択肢-->
+                                            <div class="s01-choice">
+                                                <p class="question-num01" onclick="answerN03_3()">a.テラパッド</p>
+                                                <p id="changeTextColor03_3" class="question-num01" onclick="answerY03_3()">b.タッチパッド</p>         
+                                            </div>
+                                            <!--解答-->
+                                            
+                                             <!--マルバツ画像表示, id="answer問題番号_数字"-->
+                                             <div id="answer03_3"></div>
+                                             
+                                        </div>
+                                        <div class="q-answer">
+                                            <!--選択肢-->
+                                            <div class="s01-choice">
+                                                <p id="changeTextColor03_4" class="question-num01" onclick="answerY03_4()">a.相対的</p> 
+                                                <p class="question-num01" onclick="answerN03_4()">b.独立的</p>           
+                                            </div>
+                                            <!--解答-->
+                                            
+                                             <!--マルバツ画像表示, id="answer問題番号_数字"-->
+                                             <div id="answer03_4"></div>
+                                             
+                                        </div>
+                                        <div class="q-answer">
+                                            <!--選択肢-->
+                                            <div class="s01-choice">
+                                                <p id="changeTextColor03_5" class="question-num01" onclick="answerY03_5()">a.ポインティングスティック</p> 
+                                                <p class="question-num01" onclick="answerN03_5()">b.マッスルスティック</p>           
+                                            </div>
+                                            <!--解答-->
+                                            
+                                             <!--マルバツ画像表示, id="answer問題番号_数字"-->
+                                             <div id="answer03_5"></div>
+                                             
+                                        </div>
+                                        <div class="q-answer">
+                                            <!--選択肢-->
+                                            <div class="s01-choice">
+                                                <p class="question-num01" onclick="answerN03_6()">a.絶対的</p>
+                                                <p id="changeTextColor03_6" class="question-num01" onclick="answerY03_6()">b.相対的</p>           
+                                            </div>
+                                            <!--解答-->
+                                            
+                                             <!--マルバツ画像表示, id="answer問題番号_数字"-->
+                                             <div id="answer03_6"></div>
+                                             
+                                        </div>
+                                        <div class="q-answer">
+                                            <!--選択肢-->
+                                            <div class="s01-choice">
+                                                <p id="changeTextColor03_7" class="question-num01" onclick="answerY03_7()">a.トラックボール</p> 
+                                                <p class="question-num01" onclick="answerN03_7()">b.ライスボール</p>           
+                                            </div>
+                                            <!--解答-->
+                                            
+                                             <!--マルバツ画像表示, id="answer問題番号_数字"-->
+                                             <div id="answer03_7"></div>
+                                             
+                                        </div>
+                                        <!--最後の選択肢は”end-answer”のクラスを追加する-->
+                                        <div class="end-answer q-answer">
+                                            <!--選択肢-->
+                                            <div class="s01-choice">
+                                                <p class="question-num01" onclick="answerN03_8()">a.ジョイライド</p> 
+                                                <p id="changeTextColor03_8" class="question-num01" onclick="answerY03_8()">b.ジョイスティック</p>           
+                                            </div>
+                                            <!--解答-->
+                                            
+                                             <!--マルバツ画像表示-->
+                                             <div id="answer03_8"></div>
+                                    </div>
+                    </div>
+                    <div class="con q-container04">
+                        <div class="q-sentence01">
+                            <div class="sentence">
+                                <p>4. 文字認識には、書かれた文字を認識する ( 1 ) 文字認識と,書きながら認識する ( 2 )文字認識がある. OCR ( 3 )は、光学式文字読み取り装置のことである.</p>
+                            </div>
+                        </div>
+                        <!--q-answerを複製して解答欄の追加-->
+                        <div class="q-answer">
+                            <!--選択肢-->
+                            <div class="s01-choice">
+                                <p id="changeTextColor04_1" class="question-num01" onclick="answerY04_1()">a.オフライン</p> 
+                                <p class="question-num01" onclick="answerN04_1()">b.オンライン</p>           
+                            </div>
+                            <!--解答-->
+                            
+                             <!--マルバツ画像表示, id="answer問題番号_数字"-->
+                             <div id="answer04_1"></div>
+                             
+                        </div>
+                        <!--q-answerを複製して解答欄の追加-->
+                        <div class="q-answer">
+                            <!--選択肢-->
+                            <div class="s01-choice">
+                                    <p class="question-num01" onclick="answerN04_2()">a.オフライン</p>
+                                    <p id="changeTextColor04_2" class="question-num01" onclick="answerY04_2()">b.オンライン</p> 
+                                   
+                            </div>
+                            <!--解答-->
+                                
+                                 <!--マルバツ画像表示, id="answer問題番号_数字"-->
+                            <div id="answer04_2"></div>
+                                 
+                        </div>
+                        <!--最後の選択肢は”end-answer”のクラスを追加する-->
+                        <div class="end-answer q-answer">
+                            <!--選択肢-->
+                            <div class="s01-choice">
+                                <p id="changeTextColor04_3" class="question-num01" onclick="answerY04_3()">a.Optical Character Reader</p> 
+                                <p class="question-num01" onclick="answerN04_3()">b.Open Character Reader</p>           
+                            </div>
+                            <!--解答-->
+                            
+                             <!--マルバツ画像表示-->
+                             <div id="answer04_3"></div>
+                        </div>
+                    </div>
+                    <div class="con q-container05">
+                        <div class="q-sentence01">
+                            <div class="sentence">
+                                <p>5. ( 1 ) コードは、デンソーが開発した2次元バーコードである.</p>
+                            </div>
+                        </div>
+                        <!--最後の選択肢は”end-answer”のクラスを追加する-->
+                        <div class="end-answer q-answer">
+                            <!--選択肢-->
+                            <div class="s01-choice">
+                                <p id="changeTextColor05_1" class="question-num01" onclick="answerY05_1()">a.QR</p> 
+                                <p class="question-num01" onclick="answerN05_1()">b.OJ</p>           
+                            </div>
+                            <!--解答-->
+                            
+                             <!--マルバツ画像表示-->
+                             <div id="answer05_1"></div>
+                        </div>
+                    </div>
+                    <div class="con q-container06">
+                        <div class="q-sentence01">
+                            <div class="sentence">
+                                <p>6. ( 1 )は,近距離無線通信で情報を送受する </p>
+                            </div>
+                        </div>
+                        <!--最後の選択肢は”end-answer”のクラスを追加する-->
+                        <div class="end-answer q-answer">
+                            <!--選択肢-->
+                            <div class="s01-choice">
+                                <p class="question-num01" onclick="answerN06_1()">a.RHIL</p>   
+                                <p id="changeTextColor06_1" class="question-num01" onclick="answerY06_1()">b.RFID</p>         
+                            </div>
+                            <!--解答-->
+                            
+                             <!--マルバツ画像表示-->
+                             <div id="answer06_1"></div>
+                        </div>
+                    </div>
+                    <div class="con q-container07">
+                        <div class="q-sentence01">
+                            <div class="sentence">
+                                <p>7. 真空中で蛍光体が光る( １ ), CRT と同等の原理で発光するが画素毎に冷陰極が存在する ( ２ ),有機材料を用いた発光ダイオードを画素構造に並べた構造をもつ( ３ )は、 ( ４ )のディスプレイで,一般に( 5 ) 視野角, ( 6 ) コントラスト, ( 7 ) 応答速度の特徴がある.一方,偏光で光の透過量を画素単位で制御して画像 表示する( 8 )は,素子自身が発光しない ( 9 ) 型のディスプレイである. 原理上, ( 10 ) 視野角, ( 11 ) コントラスト, ( 12 )応答速度に問題があったが, 技術開発により改善されつつある.</p>
+                            </div>
+                        </div>
+                        <div class="q-answer">
+                            <!--選択肢-->
+                            <div class="s01-choice">
+                                <p id="changeTextColor07_1" class="question-num01" onclick="answerY07_1()">a.POP(プラズマディスプレイ)</p> 
+                                <p class="question-num01" onclick="answerN07_1()">b.PHP(プラズマディスプレイ)</p>           
+                            </div>
+                            <!--解答-->
+                            
+                             <!--マルバツ画像表示, id="answer問題番号_数字"-->
+                             <div id="answer07_1"></div>
+                             
+                        </div>
+                        <div class="q-answer">
+                            <!--選択肢-->
+                            <div class="s01-choice">
+                                <p id="changeTextColor07_2" class="question-num01" onclick="answerY07_2()">a.FED(電界放出ディスプレイ)</p> 
+                                <p class="question-num01" onclick="answerN07_2()">b.FHG(電界放出ディスプレイ)</p>           
+                            </div>
+                            <!--解答-->
+                            
+                             <!--マルバツ画像表示, id="answer問題番号_数字"-->
+                             <div id="answer07_2"></div>
+                             
+                        </div>
+                        <div class="q-answer">
+                            <!--選択肢-->
+                            <div class="s01-choice">
+                                <p id="changeTextColor07_3" class="question-num01" onclick="answerY07_3()">a.OLED(有機ELディスプレイ) </p> 
+                                <p class="question-num01" onclick="answerN07_3()">b.HLED(有機ELディスプレイ) </p>           
+                            </div>
+                            <!--解答-->
+                            
+                             <!--マルバツ画像表示, id="answer問題番号_数字"-->
+                             <div id="answer07_3"></div>
+                             
+                        </div>
+                        <div class="q-answer">
+                            <!--選択肢-->
+                            <div class="s01-choice">
+                                <p id="changeTextColor07_4" class="question-num01" onclick="answerY07_4()">a.自発光型</p> 
+                                <p class="question-num01" onclick="answerN07_4()">b.他発光型</p>           
+                            </div>
+                            <!--解答-->
+                            
+                             <!--マルバツ画像表示, id="answer問題番号_数字"-->
+                             <div id="answer07_4"></div>
+                             
+                        </div>
+                        <div class="q-answer">
+                            <!--選択肢-->
+                            <div class="s01-choice">
+                                <p id="changeTextColor07_5" class="question-num01" onclick="answerY07_5()">a.広い</p> 
+                                <p class="question-num01" onclick="answerN07_5()">b.狭い</p>           
+                            </div>
+                            <!--解答-->
+                            
+                             <!--マルバツ画像表示, id="answer問題番号_数字"-->
+                             <div id="answer07_5"></div>
+                             
+                        </div>
+                        <div class="q-answer">
+                            <!--選択肢-->
+                            <div class="s01-choice">
+                                <p id="changeTextColor07_6" class="question-num01" onclick="answerY07_6()">a.高い</p> 
+                                <p class="question-num01" onclick="answerN07_6()">b.低い</p>           
+                            </div>
+                            <!--解答-->
+                            
+                             <!--マルバツ画像表示, id="answer問題番号_数字"-->
+                             <div id="answer07_6"></div>
+                             
+                        </div>
+                        <div class="q-answer">
+                            <!--選択肢-->
+                            <div class="s01-choice">
+                                <p id="changeTextColor07_7" class="question-num01" onclick="answerY07_7()">a.速い</p> 
+                                <p class="question-num01" onclick="answerN07_7()">b.遅い</p>           
+                            </div>
+                            <!--解答-->
+                            
+                             <!--マルバツ画像表示, id="answer問題番号_数字"-->
+                             <div id="answer07_7"></div>
+                             
+                        </div>
+                        <div class="q-answer">
+                            <!--選択肢-->
+                            <div class="s01-choice">
+                                <p id="changeTextColor07_8" class="question-num01" onclick="answerY07_8()">a.LCD/液晶ディスプレイ</p> 
+                                <p class="question-num01" onclick="answerN07_8()">b.LED/発光ダイオード</p>           
+                            </div>
+                            <!--解答-->
+                            
+                             <!--マルバツ画像表示, id="answer問題番号_数字"-->
+                             <div id="answer07_8"></div>
+                             
+                        </div>
+                        <div class="q-answer">
+                            <!--選択肢-->
+                            <div class="s01-choice">
+                                <p id="changeTextColor07_9" class="question-num01" onclick="answerY07_9()">a.バックライト</p> 
+                                <p class="question-num01" onclick="answerN07_9()">b.フロントライト</p>           
+                            </div>
+                            <!--解答-->
+                            
+
+                             <!--マルバツ画像表示, id="answer問題番号_数字"-->
+                             <div id="answer07_9"></div>
+                             
+                        </div>
+                        <div class="q-answer">
+                            <!--選択肢-->
+                            <div class="s01-choice">
+                                <p id="changeTextColor07_10" class="question-num01" onclick="answerY07_10()">a.狭い</p> 
+                                <p class="question-num01" onclick="answerN07_10()">b.広い</p>           
+                            </div>
+                            <!--解答-->
+                            
+                             <!--マルバツ画像表示, id="answer問題番号_数字"-->
+                             <div id="answer07_10"></div>
+                             
+                        </div>
+                        <div class="q-answer">
+                            <!--選択肢-->
+                            <div class="s01-choice">
+                                <p id="changeTextColor07_11" class="question-num01" onclick="answerY07_11()">a.低い</p> 
+                                <p class="question-num01" onclick="answerN07_11()">b.高い</p>           
+                            </div>
+                            <!--解答-->
+                            
+                             <!--マルバツ画像表示, id="answer問題番号_数字"-->
+                             <div id="answer07_11"></div>
+                             
+                        </div>
+                        <!--q-answerを複製して解答欄の追加-->
+                        <div class="end-answer q-answer">
+                            <!--選択肢-->
+                            <div class="s01-choice">
+                                <p id="changeTextColor07_12" class="question-num01" onclick="answerY07_12()">a.遅い</p> 
+                                <p class="question-num01" onclick="answerN07_12()">b.速い</p>           
+                            </div>
+                            <!--解答-->
+                            
+                             <!--マルバツ画像表示, id="answer問題番号_数字"-->
+                             <div id="answer07_12"></div>
+                             
+                        </div>
+                    </div>
+                    <div class="con q-container08">
+                        <div class="q-sentence01">
+                            <div class="sentence">
+                                <p>8. プロジェクタには,反射型液晶の( 1 ) や,微小ミラーで光強度を変える ( 2 )などが使用される. </p>
+                            </div>
+                        </div>
+                        <!--q-answerを複製して解答欄の追加-->
+                        <div class="q-answer">
+                            <!--選択肢-->
+                            <div class="s01-choice">
+                                <p id="changeTextColor08_1" class="question-num01" onclick="answerY08_1()">a.LCOS/Liquid Crystal On Silicon</p> 
+                                <p class="question-num01" onclick="answerN08_1()">b.LCHS/Liquid Crystal House Silicon</p>           
+                            </div>
+                            <!--解答-->
+                            
+                             <!--マルバツ画像表示, id="answer問題番号_数字"-->
+                             <div id="answer08_1"></div>
+                             
+                        </div>
+                        <!--最後の選択肢は”end-answer”のクラスを追加する-->
+                        <div class="end-answer q-answer">
+                            <!--選択肢-->
+                            <div class="s01-choice">
+                                <p class="question-num01" onclick="answerN08_2()">a.DMM/Digital Micromirror Memories</p> 
+                                <p id="changeTextColor08_2" class="question-num01" onclick="answerY08_2()">b.DMD/Digital Micromirror Device</p>           
+                            </div>
+                            <!--解答-->
+                            
+                             <!--マルバツ画像表示-->
+                             <div id="answer08_2"></div>
+                        </div>
+                    </div>
+                    <div class="con q-container09">
+                        <div class="q-sentence01">
+                            <div class="sentence">
+                                <p>9. 電子ペーパーは,書き換え時も含め表示のための消費電力が液晶などに比べると( 1 )一方,書き換え速度は( 2 )ので、動画表示に ( 3 )である. </p>
+                            </div>
+                        </div>
+                        <!--q-answerを複製して解答欄の追加-->
+                        <div class="q-answer">
+                            <!--選択肢-->
+                            <div class="s01-choice">
+                                <p id="changeTextColor09_1" class="question-num01" onclick="answerY09_1()">a.少ない</p> 
+                                <p class="question-num01" onclick="answerN09_1()">b.多い</p>           
+                            </div>
+                            <!--解答-->
+                            
+                             <!--マルバツ画像表示, id="answer問題番号_数字"-->
+                             <div id="answer09_1"></div> 
+                        </div>
+                        <!--q-answerを複製して解答欄の追加-->
+                        <div class="q-answer">
+                                <!--選択肢-->
+                                <div class="s01-choice">
+                                    <p id="changeTextColor09_2" class="question-num01" onclick="answerY09_2()">a.遅い</p> 
+                                    <p class="question-num01" onclick="answerN09_2()">b.速い</p>           
+                                </div>
+                                <!--解答-->
+                                
+                                 <!--マルバツ画像表示, id="answer問題番号_数字"-->
+                                 <div id="answer09_2"></div> 
+                        </div>
+                        <!--q-answerを複製して解答欄の追加-->
+                        <div class="end-answer q-answer">
+                                <!--選択肢-->
+                                <div class="s01-choice">
+                                    <p class="question-num01" onclick="answerN09_3()">a.向き</p>    
+                                    <p id="changeTextColor09_3" class="question-num01" onclick="answerY09_3()">b.不向き</p>        
+                                </div>
+                                <!--解答-->
+                                
+                                 <!--マルバツ画像表示, id="answer問題番号_数字"-->
+                                 <div id="answer09_3"></div> 
+                        </div>
+                    </div>
+                    <div class="con q-container10">
+                        <div class="q-sentence01">
+                            <div class="sentence">
+                                <p>10. ハイビジョン( 1 )は( 2 )画素の解像度を持ち,画面の横と縦の比率を示す( 3 )は、( 4 )である.4Kは2Kの4倍の解像度の( 5 ) 画素, 8Kは2Kの16倍の解像度の ( 6 ) 画素をもつ.</p>
+                            </div>
+                        </div>
+                            <div class="q-answer">
+                                <!--選択肢-->
+                                <div class="s01-choice">
+                                    <p id="changeTextColor10_1" class="question-num01" onclick="answerY10_1()">a.2K</p> 
+                                    <p class="question-num01" onclick="answerN10_1()">b.3K</p>           
+                                </div>
+                                <!--解答-->
+                                
+                                 <!--マルバツ画像表示, id="answer問題番号_数字"-->
+                                 <div id="answer10_1"></div>
+                                 
+                            </div>
+                            <div class="q-answer">
+                                <!--選択肢-->
+                                <div class="s01-choice">
+                                    <p class="question-num01" onclick="answerN10_2()">a.1720×1000</p>    
+                                    <p id="changeTextColor10_2" class="question-num01" onclick="answerY10_2()">b.1920×1080</p>           
+                                </div>
+                                <!--解答-->
+                                
+                                 <!--マルバツ画像表示, id="answer問題番号_数字"-->
+                                 <div id="answer10_2"></div>
+                                 
+                            </div>
+                            <div class="q-answer">
+                                <!--選択肢-->
+                                <div class="s01-choice">
+                                    <p class="question-num01" onclick="answerN10_3()">a.アスパラ比</p>
+                                    <p id="changeTextColor10_3" class="question-num01" onclick="answerY10_3()">b.アスペクト比</p>         
+                                </div>
+                                <!--解答-->
+                                
+                                 <!--マルバツ画像表示, id="answer問題番号_数字"-->
+                                 <div id="answer10_3"></div>
+                                 
+                            </div>
+                            <div class="q-answer">
+                                <!--選択肢-->
+                                <div class="s01-choice">
+                                    <p id="changeTextColor10_4" class="question-num01" onclick="answerY10_4()">a.16:9 </p> 
+                                    <p class="question-num01" onclick="answerN10_4()">b.16:11</p>           
+                                </div>
+                                <!--解答-->
+                                
+                                 <!--マルバツ画像表示, id="answer問題番号_数字"-->
+                                 <div id="answer10_4"></div>
+                                 
+                            </div>
+                            <div class="q-answer">
+                                <!--選択肢-->
+                                <div class="s01-choice">
+                                    <p id="changeTextColor10_5" class="question-num01" onclick="answerY10_5()">a.3840×2160</p> 
+                                    <p class="question-num01" onclick="answerN10_5()">b.3800×1900</p>           
+                                </div>
+                                <!--解答-->
+                                
+                                 <!--マルバツ画像表示, id="answer問題番号_数字"-->
+                                 <div id="answer10_5"></div>
+                                 
+                            </div>
+                            <div class="q-answer">
+                                <!--選択肢-->
+                                <div class="s01-choice">
+                                    <p class="question-num01" onclick="answerN10_6()">a.7560×4290</p>
+                                    <p id="changeTextColor10_6" class="question-num01" onclick="answerY10_6()">b.7680×4320</p>           
+                                </div>
+                                <!--解答-->
+                                
+                                 <!--マルバツ画像表示, id="answer問題番号_数字"-->
+                                 <div id="answer10_6"></div>
+                                 
+                            </div>
+                    </div>
+                    <div class="con q-container11">
+                        <div class="q-sentence01">
+                            <div class="sentence">
+                                <p>11. 印刷物の解像度は、300~600( 1 )であるが.では、ディスプレイの解像度である( 2 )は,それに迫っている.</p>
+                            </div>
+                        </div>
+                        <!--q-answerを複製して解答欄の追加-->
+                        <div class="q-answer">
+                            <!--選択肢-->
+                            <div class="s01-choice">
+                                <p class="question-num01" onclick="answerN11_1()">a.cod</p>   
+                                <p id="changeTextColor11_1" class="question-num01" onclick="answerY11_1()">b.doi/dot per inch</p>         
+                            </div>
+                            <!--解答-->
+                            
+                             <!--マルバツ画像表示, id="answer問題番号_数字"-->
+                             <div id="answer11_1"></div>
+                             
+                        </div>
+                        <div class="end-answer q-answer">
+                                <!--選択肢-->
+                                <div class="s01-choice">
+                                    <p class="question-num01" onclick="answerN11_2()">a.ppap</p>   
+                                    <p id="changeTextColor11_2" class="question-num01" onclick="answerY11_2()">b.ppi/pixel per inch</p>         
+                                </div>
+                                <!--解答-->
+                                
+                                 <!--マルバツ画像表示, id="answer問題番号_数字"-->
+                                 <div id="answer11_2"></div>
+                                 
+                        </div>
+                    </div>
+                    <div class="con q-container12">
+                        <div class="q-sentence01">
+                            <div class="sentence">
+                                <p>12. メガネあり2眼立体ディスプレイには,左目用と右目用の画像を時分割で表示する。( 1 ) 方式,空間分割で表示する( 2 ) 方式などがある. メガネなしには,スリットを使用する ( 3 )方式,かまぼこ上のレンズを使用する ( 4 )方式がある.</p>
+                            </div>
+                        </div>
+                        <!--q-answerを複製して解答欄の追加-->
+                        <div class="q-answer">
+                            <!--選択肢-->
+                            <div class="s01-choice">
+                                <p id="changeTextColor12_1" class="question-num01" onclick="answerY12_1()">a.シャッターメガネ</p> 
+                                <p class="question-num01" onclick="answerN12_1()">b.ハイメガネ</p>           
+                            </div>
+                            <!--解答-->
+                            
+                             <!--マルバツ画像表示, id="answer問題番号_数字"-->
+                             <div id="answer12_1"></div>
+                             
+                        </div>
+                        <!--q-answerを複製して解答欄の追加-->
+                        <div class="q-answer">
+                                <!--選択肢-->
+                                <div class="s01-choice">
+                                    <p id="changeTextColor12_2" class="question-num01" onclick="answerY12_2()">a.偏光メガネ</p> 
+                                    <p class="question-num01" onclick="answerN12_2()">b.蛍光メガネ</p>           
+                                </div>
+                                <!--解答-->
+                                
+                                 <!--マルバツ画像表示, id="answer問題番号_数字"-->
+                                 <div id="answer12_2"></div>
+                                 
+                        </div>
+                        <!--q-answerを複製して解答欄の追加-->
+                        <div class="q-answer">
+                                <!--選択肢-->
+                                <div class="s01-choice">
+                                    <p id="changeTextColor12_3" class="question-num01" onclick="answerY12_3()">a.パララックスバリア</p> 
+                                    <p class="question-num01" onclick="answerN12_3()">b.ギトックスバリア</p>           
+                                </div>
+                                <!--解答-->
+                                
+                                 <!--マルバツ画像表示, id="answer問題番号_数字"-->
+                                 <div id="answer12_3"></div>
+                                 
+                        </div>
+                        <!--最後の選択肢は”end-answer”のクラスを追加する-->
+                        <div class="end-answer q-answer">
+                            <!--選択肢-->
+                            <div class="s01-choice">
+                                <p id="changeTextColor12_4" class="question-num01" onclick="answerY12_4()">a.レンチキュラ</p> 
+                                <p class="question-num01" onclick="answerN12_4()">b.タランチュラ</p>           
+                            </div>
+                            <!--解答-->
+                            
+                             <!--マルバツ画像表示-->
+                             <div id="answer12_4"></div>
+                        </div>
+                    </div>
+                    <div class="con q-container13">
+                        <div class="q-sentence01">
+                            <div class="sentence">
+                                <p>13. マイクロフォンには、空気の振動で磁石の中のコイルを動かして電気信号に変換する( 1 )と,空気の振動で電極間の距離が 変化することで発生する静電容量の変化を取り出す( 2 )がある.</p>
+                            </div>
+                        </div>
+                        <!--q-answerを複製して解答欄の追加-->
+                        <div class="q-answer">
+                            <!--選択肢-->
+                            <div class="s01-choice">
+                                <p class="question-num01" onclick="answerN13_1()">a.ダイナミック型/電型/ムービー型</p>
+                                <p id="changeTextColor13_1" class="question-num01" onclick="answerY13_1()">b.ダイナミック型/動電型/ムービングコイル型</p>            
+                            </div>
+                            <!--解答-->
+                            
+                             <!--マルバツ画像表示, id="answer問題番号_数字"-->
+                             <div id="answer13_1"></div>
+                             
+                        </div>
+                        <!--q-answerを複製して解答欄の追加-->
+                        <div class="end-answer q-answer">
+                                <!--選択肢-->
+                                <div class="s01-choice">
+                                    <p class="question-num01" onclick="answerN13_2()">a.コンデント型/静型</p>
+                                    <p id="changeTextColor13_2" class="question-num01" onclick="answerY13_2()">b.コンデンサ型/静電型</p>            
+                                </div>
+                                <!--解答-->
+                                
+                                 <!--マルバツ画像表示, id="answer問題番号_数字"-->
+                                 <div id="answer13_2"></div>
+                                 
+                        </div>
+                    </div>
+                    <div class="con q-container14">
+                        <div class="q-sentence01">
+                            <div class="sentence">
+                                <p>14. スピーカでは,電気音響変換に磁力を使う ( 1 ) が多い.ヘッドホンでは,コンデンサタイプの ( 2 )も使われる. ブザーの多くは, ( 3 )である. </p>
+                            </div>
+                        </div>
+                        <!--q-answerを複製して解答欄の追加-->
+                        <div class="q-answer">
+                            <!--選択肢-->
+                            <div class="s01-choice">
+                                <p id="changeTextColor14_1" class="question-num01" onclick="answerY14_1()">a.動電型</p> 
+                                <p class="question-num01" onclick="answerN14_1()">b.静電型</p>           
+                            </div>
+                            <!--解答-->
+                            
+                             <!--マルバツ画像表示, id="answer問題番号_数字"-->
+                             <div id="answer14_1"></div>
+                             
+                        </div>
+                        <div class="q-answer">
+                                <!--選択肢-->
+                                <div class="s01-choice">
+                                    <p id="changeTextColor14_2" class="question-num01" onclick="answerY14_2()">a.静電型</p> 
+                                    <p class="question-num01" onclick="answerN14_2()">b.動電型</p>           
+                                </div>
+                                <!--解答-->
+                                
+                                 <!--マルバツ画像表示-->
+                                 <div id="answer14_2"></div>
+                        </div>
+                        <!--最後の選択肢は”end-answer”のクラスを追加する-->
+                        <div class="end-answer q-answer">
+                            <!--選択肢-->
+                            <div class="s01-choice">
+                                <p id="changeTextColor14_3" class="question-num01" onclick="answerY14_3()">a.圧電型</p> 
+                                <p class="question-num01" onclick="answerN14_3()">b.動電型</p>           
+                            </div>
+                            <!--解答-->
+                            
+                             <!--マルバツ画像表示-->
+                             <div id="answer14_3"></div>
+                        </div>
+                    </div>
+                    <div class="con q-container15">
+                        <div class="q-sentence01">
+                            <div class="sentence">
+                                <p>15.　5.1 サラウンドの「.1」の意味は, ( 1 )を補強する信号があるという意味である.</p>
+                            </div>
+                        </div>
+                        <!--最後の選択肢は”end-answer”のクラスを追加する-->
+                        <div class="end-answer q-answer">
+                            <!--選択肢-->
+                            <div class="s01-choice">
+                                <p id="changeTextColor15_1" class="question-num01" onclick="answerY15_1()">a.低音</p> 
+                                <p class="question-num01" onclick="answerN15_1()">b.高音</p>           
+                            </div>
+                            <!--解答-->
+                            
+                             <!--マルバツ画像表示-->
+                             <div id="answer15_1"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>     
+    </main>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="05.js"></script>
+  </body>
+</html>
